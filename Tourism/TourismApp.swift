@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct TourismApp: App {
+    
+//    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoryHome()
+                .environmentObject(UserData())
+//            LandmarkDetail(landmark: landmarkData[0])
+//                .environmentObject(UserData())
         }
     }
 }
